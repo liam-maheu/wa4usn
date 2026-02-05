@@ -1,0 +1,30 @@
+title: Charleston Amateur Radio Society
+description: Serving the Lowcountry amateur radio community since 1971
+callsign: WA4USN
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /posts/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
